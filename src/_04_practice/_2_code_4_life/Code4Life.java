@@ -8,19 +8,22 @@ import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
 public class Code4Life {
+	
+		
+	
 	/***********  SOUND ***************
 	 * Some computers are unable to play sounds. 
 	 * If you cannot play sound on this computer, set canPlaySounds to false.
 	 * If you are not sure, ask your teacher 
 	 * *****************/
-	static boolean canPlaySounds = true;
+	static boolean canPlaySounds = false;
 	
-	
+	public static void main(String[] args) {
 	// 1. Ask the user how many hours they spent coding this week.
-
+	String codinghours = JOptionPane.showInputDialog("How many hours have you spent coding this week?");
 	// 2. If it is less than or equal to 2, tell them to stop watching YouTube and
 	// write code instead.
-
+ 
 	// 3. If it is greater than or equal to 3 AND less than or equal to 5, tell them
 	// they're a Code Ninja
 
@@ -29,7 +32,7 @@ public class Code4Life {
 
 
 
-	
+	}
 	private static void playBatmanTheme() {
 	// NOTE: Download batman.wav from league-sounds on GitHub: https://github.com/jointheleague/league-sounds
 	//	     Then put batman.wav into the "_2_code_4_life" project
@@ -61,3 +64,4 @@ public class Code4Life {
 	
 
 }
+
