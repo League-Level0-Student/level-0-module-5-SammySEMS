@@ -23,14 +23,27 @@ public class Code4Life {
 	String codinghours = JOptionPane.showInputDialog("How many hours have you spent coding this week?");
 	// 2. If it is less than or equal to 2, tell them to stop watching YouTube and
 	// write code instead.
- 
+	double hours = Integer.parseInt(codinghours);
+	if (hours==2) {
+		JOptionPane.showMessageDialog(null, "Stop watching YouTUbe and write code instead!");
+	}
+	else if (hours<2) {
+		JOptionPane.showMessageDialog(null, "Stop watching YouTUbe and write code instead!");
+	}
 	// 3. If it is greater than or equal to 3 AND less than or equal to 5, tell them
 	// they're a Code Ninja
-
+	else if (hours==3) {
+		JOptionPane.showMessageDialog(null, "You are the Code Ninja!");
+	}
+	else if (hours>3&&hours<5) {
+		JOptionPane.showMessageDialog(null, "You are the Code Ninja!");
+	}
 	// 4. If it is more than 5, call the playBatmanTheme  method, then 
 	//    call the displayBatman method.
-
-
+	else {
+		JOptionPane.showMessageDialog(null, "Batman!!!...bum..bum..bum..Batman!!!");
+	}
+	
 
 	}
 	private static void playBatmanTheme() {
