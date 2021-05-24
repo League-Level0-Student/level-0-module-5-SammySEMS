@@ -24,7 +24,9 @@ void skill1() {
 	
 
 
+
 //Tell them how many cents they have (hint multiply by 10)
+System.out.println("You have " + cents*10 + " cents ");
 
 
 
@@ -49,13 +51,8 @@ void skill2() { // Write a loop to print every third number between 1 and 30 to 
 		System.out.println(i);
 
 	}
-
-
-
-
 	}
 }
-
 void skill3() { // Get a random number that is less than 20 and print it to the console
 
 Random rob = new Random();
@@ -66,7 +63,7 @@ int number2 = rob.nextInt(11);
 
 
 //Using a pop-up, tell the user the difference between the numbers // Hint: use subtraction
-
+System.out.println(number-number2);
 
 
 }
@@ -88,29 +85,22 @@ void skill4() { // In a pop-up, ask the user for the city they live in
 		else {
 		JOptionPane.showMessageDialog(null, "You should move to San Diego");
 //Create a variable - cars - and initialize it to the number of cars your family has. // If there are 0 cars, use a pop-up to display, "I bet you use public transportation."
-
+		int car1 = 4;
 	int cars;
 	String Ncars =JOptionPane.showInputDialog("How many cars does your family have?");
 	int NCars = Integer.parseInt(Ncars);
 	if(NCars==0) {
 		JOptionPane.showMessageDialog(null, "I bet you use public transporation");
 	}
-
-//If there is 1 car, use a pop-up to display the make/model of the car
-
-
-
-//If there is more than 1 car, use a pop-up to display how many wheels the // cars have between them.
-	
-	
+	//If there is 1 car, use a pop-up to display the make/model of the car
+	else if (NCars==1) {
 		
-		
-	//	for (int j = 0; j < 20; j++) {
-	//		System.out.println(j);
-
-	//	}
-
+	}
 	
+	//If there is more than 1 car, use a pop-up to display how many wheels the // cars have between them.
+	else  {
+		System.out.println(NCars-car1);
+		}
 		}
 		
 	
@@ -118,23 +108,7 @@ void skill4() { // In a pop-up, ask the user for the city they live in
 		}	
 	
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+}
 	
 
-	
-	
-	
-	
-	
-	
-}
-	
-}
