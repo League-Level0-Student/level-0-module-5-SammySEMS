@@ -1,5 +1,7 @@
 package _01_algorithms._1_prime_or_not;
 
+import java.util.Random;
+
 import javax.swing.JOptionPane;
 
 public class PrimeOrNot {
@@ -20,7 +22,10 @@ public class PrimeOrNot {
 		}
 
 		//JOptionPane.showMessageDialog(null, "The number is prime");
-
+	Random rob = new Random();
+	
+	int num = rob.nextInt(21);
+			System.out.println(rob);
 		// System.out.println(5%2);
 
 		// System.out.println(5%3);
